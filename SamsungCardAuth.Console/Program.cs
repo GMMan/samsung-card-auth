@@ -17,6 +17,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 using McMaster.Extensions.CommandLineUtils;
+using SamsungCardAuth.Linux;
 using SamsungCardAuth.Windows;
 using System;
 using System.IO;
@@ -45,6 +46,10 @@ namespace SamsungCardAuth
                 if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
                 {
                     platform = new WindowsPlatformOperations();
+                }
+                else if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
+                {
+                    platform = new LinuxPlatformOperations();
                 }
                 else
                 {

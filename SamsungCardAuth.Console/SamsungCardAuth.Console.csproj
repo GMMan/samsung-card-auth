@@ -13,6 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\SamsungCardAuth.Windows\SamsungCardAuth.Windows.csproj" />
     <ProjectReference Include="..\SamsungCardAuth\SamsungCardAuth.csproj" />
+    <ProjectReference Include="..\SamsungCardAuth.Linux\SamsungCardAuth.Linux.csproj" />
   </ItemGroup>
 
 </Project>
