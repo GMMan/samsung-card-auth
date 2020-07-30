@@ -24,7 +24,7 @@ figure out how it actually does this. After some tracing, I found the
 authentication is done entirely through read operations. It's somewhat
 clever, since authentication will never cause data to be overwritten if the
 card does not support the protocol, and there are no special ioctls to
-cause weird things to happen. However, because HMAC is used for,
+cause weird things to happen. However, because HMAC is used for
 authentication, and it requires knowledge of the key by both the sender and
 the receipient, the same keys need to be present in both the card and the
 program, and not just on one end or the other, meaning the secrets are fully
