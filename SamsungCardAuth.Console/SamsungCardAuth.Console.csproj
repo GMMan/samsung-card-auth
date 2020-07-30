@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AssemblyName>SamsungCardAuth.Console</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SamsungCardAuth.Windows\SamsungCardAuth.Windows.csproj" />
+    <ProjectReference Include="..\SamsungCardAuth\SamsungCardAuth.csproj" />
+  </ItemGroup>
+
+</Project>
